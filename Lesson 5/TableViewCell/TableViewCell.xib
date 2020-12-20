@@ -9,7 +9,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="TableViewCell" rowHeight="196" id="P3C-94-6es" customClass="TableViewCell">
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="indexCell" rowHeight="196" id="P3C-94-6es" customClass="TableViewCell" customModule="Lesson_5" customModuleProvider="target">
             <rect key="frame" x="0.0" y="0.0" width="806" height="196"/>
             <autoresizingMask key="autoresizingMask"/>
             <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="P3C-94-6es" id="8wv-rN-DXL">
@@ -43,7 +43,7 @@
                 </constraints>
             </tableViewCellContentView>
             <connections>
-                <outlet property="indexTableLabel" destination="Tkq-Bc-LY8" id="erd-ha-tll"/>
+                <outlet property="indexLabel" destination="Tkq-Bc-LY8" id="wsc-wJ-qbA"/>
             </connections>
             <point key="canvasLocation" x="0.0" y="161.38392857142856"/>
         </tableViewCell>

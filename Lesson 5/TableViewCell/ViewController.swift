@@ -7,26 +7,30 @@
 
 import UIKit
 
-class ViewController: UIViewController, UITableViewDataSource {
+class ViewController: UIViewController {
 
-    @IBOutlet weak var indexNumber: UILabel!
+    @IBOutlet weak var tableLabel: UILabel!
     @IBOutlet weak var tableView: UITableView!
     override func viewDidLoad() {
         super.viewDidLoad()
         
         tableView.dataSource = self
         
-        tableView.register(UINib(nibName: "TableViewCell", bundle: nil), forCellReuseIdentifier: "TableViewCell")
+        tableView.register(
+                UINib(nibName: "indexCell",
+                bundle: nil),
+                forCellReuseIdentifier: "indexCell")
     }
 }
-    extension ViewController {
+extension ViewController : UITableViewDataSource {
         
         func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-            return 100
+            return 1
         }
-        
+      
         func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-            let cell = tableView.dequeueReusableCell(withIdentifier: "TableViewCell", for: indexPath) as! TableViewCell
+            
+          let cell =  tableView.dequeueReusableCell(withIdentifier: "indexCell", for: indexPath) as! TableViewCell
             
             cell.setup(index: indexPath.row)
             
@@ -38,9 +42,8 @@ class ViewController: UIViewController, UITableViewDataSource {
 
     extension ViewController :  UITableViewDelegate {
         func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-            indexNumber.text = "Index: \(indexPath.row)"
+            tableLabel.text = "Index: \(indexPath.row)"
         }
     }
-    
 
 

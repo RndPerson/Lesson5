@@ -17,7 +17,8 @@ class CollectionViewController: UICollectionViewController {
         collectionView.dataSource = self
         
         collectionView.register(
-            UINib(nibName: "CollectionViewCell", bundle: nil),
+            UINib(nibName: "CollectionViewCell",
+            bundle: nil),
             forCellWithReuseIdentifier: "CollectionViewCell"
         )
     }

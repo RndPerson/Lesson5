@@ -21,10 +21,9 @@
                                 <rect key="frame" x="0.0" y="138" width="414" height="724"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                             </tableView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Number" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="r85-OO-mbq">
-                                <rect key="frame" x="145" y="88" width="125" height="43"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="36"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ydA-BG-mFC">
+                                <rect key="frame" x="186" y="109" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -35,12 +34,13 @@
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="0rl-Ai-Kxv" secondAttribute="bottom" id="5u3-gs-HIh"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="0rl-Ai-Kxv" secondAttribute="trailing" id="H2W-iT-TC7"/>
                             <constraint firstItem="0rl-Ai-Kxv" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="X0b-Kg-hfC"/>
+                            <constraint firstItem="ydA-BG-mFC" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="cNq-qU-Xg2"/>
                             <constraint firstItem="0rl-Ai-Kxv" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="50" id="lod-38-ddZ"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="6Ja-yD-Eq6"/>
                     <connections>
-                        <outlet property="indexNumber" destination="r85-OO-mbq" id="ee7-wV-hxh"/>
+                        <outlet property="tableLabel" destination="ydA-BG-mFC" id="fIa-5E-3fA"/>
                         <outlet property="tableView" destination="0rl-Ai-Kxv" id="Mkt-Ka-TVN"/>
                     </connections>
                 </viewController>

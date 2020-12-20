@@ -9,12 +9,13 @@ import UIKit
 
 class TableViewCell: UITableViewCell {
      
-
-    @IBOutlet weak var indexTableLabel: UILabel!
+    
+    @IBOutlet weak var indexLabel: UILabel!
     
     func setup (index: Int) {
-        indexTableLabel.text = "\(index)"
+        indexLabel.text = "Index: \(index)"
     }
+
     
     
     @IBAction func goToCollectionView(_ sender: Any) {
