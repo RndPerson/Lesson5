@@ -21,9 +21,9 @@
                                 <rect key="frame" x="0.0" y="138" width="414" height="724"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                             </tableView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ydA-BG-mFC">
-                                <rect key="frame" x="186" y="109" width="42" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Index" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ydA-BG-mFC">
+                                <rect key="frame" x="171.5" y="98" width="71" height="36"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -36,6 +36,7 @@
                             <constraint firstItem="0rl-Ai-Kxv" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="X0b-Kg-hfC"/>
                             <constraint firstItem="ydA-BG-mFC" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="cNq-qU-Xg2"/>
                             <constraint firstItem="0rl-Ai-Kxv" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="50" id="lod-38-ddZ"/>
+                            <constraint firstItem="ydA-BG-mFC" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="10" id="p73-HL-UnX"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="6Ja-yD-Eq6"/>
@@ -46,12 +47,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1047.8260869565217" y="77.678571428571431"/>
+            <point key="canvasLocation" x="984" y="78"/>
         </scene>
         <!--Collection View Controller-->
         <scene sceneID="AR3-qz-hss">
             <objects>
-                <collectionViewController id="N09-xv-x0e" customClass="CollectionViewController" customModule="Lesson_5" customModuleProvider="target" sceneMemberID="viewController">
+                <collectionViewController storyboardIdentifier="collectionVC" id="N09-xv-x0e" customClass="CollectionViewController" customModule="Lesson_5" customModuleProvider="target" sceneMemberID="viewController">
                     <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="VWl-PJ-Wbp">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

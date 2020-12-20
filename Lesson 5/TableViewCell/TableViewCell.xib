@@ -17,16 +17,16 @@
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1aD-xE-D79">
-                        <rect key="frame" x="592" y="11" width="155" height="156"/>
-                        <fontDescription key="fontDescription" type="system" pointSize="55"/>
+                        <rect key="frame" x="617" y="11" width="130" height="156"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="46"/>
                         <state key="normal" title="Button"/>
                         <connections>
                             <action selector="goToCollectionView:" destination="P3C-94-6es" eventType="touchUpInside" id="mtA-Yy-hpa"/>
                         </connections>
                     </button>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Tkq-Bc-LY8">
-                        <rect key="frame" x="70" y="18" width="140" height="150"/>
-                        <fontDescription key="fontDescription" type="system" pointSize="60"/>
+                        <rect key="frame" x="70" y="18" width="119" height="150"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="51"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
@@ -41,8 +41,15 @@
                     <constraint firstAttribute="bottomMargin" secondItem="1aD-xE-D79" secondAttribute="bottom" constant="18" id="zcd-jD-3AU"/>
                     <constraint firstItem="1aD-xE-D79" firstAttribute="leading" secondItem="Tkq-Bc-LY8" secondAttribute="trailing" constant="382" id="zrD-cY-zON"/>
                 </constraints>
+                <variation key="default">
+                    <mask key="constraints">
+                        <exclude reference="yoz-v0-U5y"/>
+                        <exclude reference="zrD-cY-zON"/>
+                    </mask>
+                </variation>
             </tableViewCellContentView>
             <connections>
+                <outlet property="btnGoToCVC" destination="1aD-xE-D79" id="WzP-M8-P13"/>
                 <outlet property="indexLabel" destination="Tkq-Bc-LY8" id="wsc-wJ-qbA"/>
             </connections>
             <point key="canvasLocation" x="0.0" y="161.38392857142856"/>

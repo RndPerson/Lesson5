@@ -11,15 +11,11 @@ class TableViewCell: UITableViewCell {
      
     
     @IBOutlet weak var indexLabel: UILabel!
+    @IBOutlet weak var btnGoToCVC: UIButton!
+    
     
     func setup (index: Int) {
-        indexLabel.text = "Index: \(index)"
+        indexLabel.text = "\(index)"
     }
 
-    
-    
-    @IBAction func goToCollectionView(_ sender: Any) {
-        
-    }
-    
 }
