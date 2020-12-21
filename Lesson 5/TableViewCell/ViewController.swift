@@ -7,6 +7,10 @@
 
 import UIKit
 
+protocol ButtonDelegate {
+    func tapButton()
+}
+
 class ViewController: UIViewController {
 
     @IBOutlet weak var tableLabel: UILabel!
@@ -40,6 +44,7 @@ extension ViewController : UITableViewDataSource {
           let cell =  tableView.dequeueReusableCell(withIdentifier: "indexCell", for: indexPath) as! TableViewCell
             
             cell.setup(index: indexPath.row)
+            cell.delegate = self
             
             return cell
             
@@ -53,4 +58,10 @@ extension ViewController : UITableViewDataSource {
         }
     }
 
-
+extension ViewController: ButtonDelegate {
+    func tapButton() {
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        let collectionViewController = storyboard.instantiateViewController(withIdentifier: "CollectionViewController") as! CollectionViewController
+        self.navigationController?.pushViewController(collectionViewController, animated: true)
+    }
+}

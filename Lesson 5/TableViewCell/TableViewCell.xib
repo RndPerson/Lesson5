@@ -21,7 +21,7 @@
                         <fontDescription key="fontDescription" type="system" pointSize="46"/>
                         <state key="normal" title="Button"/>
                         <connections>
-                            <action selector="goToCollectionView:" destination="P3C-94-6es" eventType="touchUpInside" id="mtA-Yy-hpa"/>
+                            <action selector="tapButton:" destination="P3C-94-6es" eventType="touchUpInside" id="5JE-wF-QZZ"/>
                         </connections>
                     </button>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Tkq-Bc-LY8">
